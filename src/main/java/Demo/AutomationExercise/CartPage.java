@@ -2,6 +2,7 @@ package Demo.AutomationExercise;
 
 import java.util.List;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,6 +43,9 @@ public class CartPage extends AbstractComponents  {
 	@FindBy(xpath="//a[text()='Place Order']")
 	WebElement placeOrder;
 	
+	@FindBy(xpath="//u[text()='Register / Login']")
+	WebElement regloginBtn;
+	
 	public int cartItemCount() {
 		return cartRows.size();
 	}
@@ -77,6 +81,19 @@ public class CartPage extends AbstractComponents  {
 		Thread.sleep(5000);
 		placeOrder.click();
 
+	}
+	
+	public void clickregloginBtn() throws InterruptedException {
+		Thread.sleep(5000);
+		regloginBtn.click();
+	}
+	
+	public boolean isLoginRequired() {
+	    try {
+	        return regloginBtn.isDisplayed();
+	    } catch(Exception e) {
+	        return false;
+	    }
 	}
 
 }

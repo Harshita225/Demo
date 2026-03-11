@@ -17,8 +17,15 @@ public class HomePage {
 		@FindBy(linkText= "Signup / Login")
 		WebElement signupLogin;
 		
+		@FindBy(xpath="//a[text()=' Cart']")
+		WebElement cartBtn;
+		
 		public void clickSignupLogin() {
 			signupLogin.click();
+		}
+		
+		public void goToCart() {
+		    cartBtn.click();
 		}
 
 	}

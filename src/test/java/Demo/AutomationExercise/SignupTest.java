@@ -10,13 +10,13 @@ public class SignupTest extends BaseTest{
 		hp.clickSignupLogin();
 		
 		SignupPage sp=new SignupPage(driver);
-		sp.signup("Apple", "abc894@gmail.com");
+		sp.signup("Priya", "priya894@gmail.com");
 		sp.selectTitle();
 		sp.enterPswd("1234567");
 		sp.selectDOB("15","March","2004");
 		sp.selectNewsLetter();
 		sp.selectOffers();
-		sp.enterFirstName("Apple");
+		sp.enterFirstName("Priya");
 		sp.enterLastName("Sony");
 		sp.enterCompany("ABC Pvt Ltd");
 		sp.enterAddress("Street 1","Apartment 5");

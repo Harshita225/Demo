@@ -6,7 +6,10 @@
       <class name="Demo.AutomationExercise.LoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="LoggedOutUser"/>
+          <include name="addProductToCartTest"/>
           <include name="setup"/>
+          <include name="validLogin"/>
           <include name="validPayments"/>
         </methods>
       </class> <!-- Demo.AutomationExercise.LoginTest -->
